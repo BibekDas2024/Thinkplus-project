@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Course Details</title>
+  <link rel="stylesheet" href="cstyles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">Thinkplus</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="course-hero">
+      
+      <div class="course-main">
+        <div class="top">
+          <div style="display:flex;gap:18px;align-items:flex-start;">
+            <div class="course-thumb" id="course-thumb">📚</div>
+            <div style="flex:1">
+              <h1 class="course-title" id="course-title">Course Title</h1>
+              <div class="course-meta" id="course-meta">⭐ 4.9 • 5,234 students • 60 lessons</div>
+              <div class="instructor">
+                <div class="avatar">IN</div>
+                <div> 
+                  <div id="instructor-name" style="font-weight:600">Instructor Name</div>
+                  <div id="instructor-bio" style="font-size:13px;color:var(--text-muted)">Instructor title · 10 courses</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="what-you-learn">
+          <h3>What you'll learn</h3>
+          <ul id="learn-list"></ul>
+        </div>
+
+        <div class="section" id="curriculum">
+          <h3>Curriculum</h3>
+          <div id="curriculum-list"></div>
+        </div>
+
+        <div class="section" id="description">
+          <h3>Course description</h3>
+          <p id="course-desc"></p>
+        </div>
+
+        <div class="section" id="reviews">
+          <h3>Reviews</h3>
+          <div id="reviews-list"></div>
+        </div>
+      </div>
+
+      
+      <aside class="course-sidebar">
+        <div id="sidebar-thumb" style="margin-bottom:12px;"></div>
+        <div class="price" id="course-price">₹0</div>
+        <button id="enroll-cta" class="btn-enroll">Enroll now</button>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px">30-day money-back guarantee</p>
+
+        <div style="margin-top:14px;font-size:13px;color:var(--text-muted);text-align:left;">
+          <div><strong>Level:</strong> <span id="course-level">All Levels</span></div>
+          <div><strong>Language:</strong> <span id="course-language">English</span></div>
+          <div><strong>Subtitles:</strong> <span id="course-subtitles">English</span></div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="course-data.js"></script>
+  <script src="course-page.js"></script>
+</body>
+</html>
